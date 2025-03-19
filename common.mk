@@ -170,10 +170,6 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor
 
-# Dolby Media Codecs Loading Support (Overwrites Vendor files)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dolby/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
-
 # Dolby Props
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1 \
